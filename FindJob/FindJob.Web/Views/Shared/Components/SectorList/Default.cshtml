@@ -1,0 +1,19 @@
+﻿@model FindJob.Web.Models.SectorListViewModel
+
+    <div class="list-group">
+
+        <table>
+
+            @foreach (var Sector in Model.Sectors)
+            {
+                <tr>
+                    <td>
+                        <a href="/Advertisement/FilterBySector?sector=@Sector.Id">@Sector.Name</a>
+                    </td>
+                </tr>
+
+            }
+
+        </table>
+    </div>
+

@@ -1,0 +1,17 @@
+﻿@model FindJob.Web.Models.CompanyListViewModel
+
+    <div class="list-group">
+        <table>
+            @foreach (var Company in Model.Companies)
+            {
+                <tr>
+                    <td>
+                        <a href="/Advertisement/FilterByCompany?company=@Company.Id">@Company.Name</a>
+                    </td>
+
+                </tr>
+            }
+
+        </table>
+
+    </div>

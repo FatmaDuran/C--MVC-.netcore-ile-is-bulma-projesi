@@ -1,0 +1,21 @@
+﻿@model FindJob.Web.Models.CityListViewModel
+
+<head>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+
+</head>
+<div class="list-group">
+
+
+    <table>
+        @foreach (var City in Model.Cities)
+        {
+            <ul>
+                <li>
+                    <a href="/Advertisement/FilterByCity?city=@City.Id ">@City.Name</a>
+
+                </li>
+            </ul>
+        }
+    </table>
+</div>

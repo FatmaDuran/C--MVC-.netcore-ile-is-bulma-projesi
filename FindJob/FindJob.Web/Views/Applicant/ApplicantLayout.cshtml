@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+    <html>
+    <head>
+        <meta name="viewport" content="" />
+        <title>@ViewBag.Title</title>
+        <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="~/node_modules/bootstrap/js/src/dropdown.js"></script>
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">İŞ BUL</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://localhost:44388/Applicant/InformationDetail">Bilgilerimi Gör</a></li>
+                    <li><a href="#">İlanlarımı Gör</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+
+                <a class=" btn btn-xs btn danger" href="https://localhost:44388/Account/Login" style=" border: none;
+        color: white;
+        padding: 7px 10px;
+        font-size: 16px;
+        cursor: pointer;">Çıkış Yap</a>
+
+            </div>
+        </nav>
+
+        <div class="col-md-10"> @RenderBody() </div>
+    </body>
+</html>

@@ -1,0 +1,62 @@
+﻿@model FindJob.Web.Models.ApplicantViewModel
+
+@{
+    Layout = "~/Views/Applicant/ApplicantLayout.cshtml";
+}
+   
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <h1>Applicant User  ID:@ViewBag.UserId</h1>
+    <h4>Bilgilerim</h4>
+</head>
+<body>
+    <div class="col-md-10">
+
+        <style>
+            .btn {
+                border: none;
+                color: white;
+                padding: 7px 9px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+
+            .info {
+                background-color: #2196F3;
+            }
+
+            .danger {
+                background-color: #f44336;
+            }
+                /* Red */
+                .danger:hover {
+                    background: #da190b;
+                }
+        </style>
+
+        <ul>
+            <li>Ad <a>@Model.Applicant.Name</a> </li>
+            <li>Soyad<a>@Model.Applicant.Surname </a> </li>
+            <li> Doğum Tarihi  <a>@Model.Applicant.BirthDate</a>  </li>           
+            <li>Mail Adresi <a>@Model.Applicant.User.EMail</a> </li>
+            <li> Kullanıcı Adı <a>@Model.Applicant.User.Username</a></li>
+            <li> Şifre<a>@Model.Applicant.User.Password</a></li>
+            <li> Açıklama  <a>@Model.Applicant.Description</a>  </li>
+        </ul>
+        <ul>
+
+            <li>
+                <!--Çalışmıyor-->
+                <a class=" btn btn-xs btn danger" href="#" style=" border: none;
+                        color: white;
+                        padding: 7px 10px;
+                        font-size: 16px;
+                        cursor: pointer;">DÜZENLE</a>
+            </li>
+
+        </ul>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,16 @@
+﻿@model FindJob.Web.Models.LevelListViewModel
+
+    <div class="list-group">
+        <table>
+            @foreach (var Level in Model.Levels)
+            {
+                <tr>
+                    <td>
+
+                        <a href="/Advertisement/FilterByLevel?level=@Level.Id">  @Level.Name</a>
+
+                    </td>
+                </tr>
+            }
+        </table>
+        </div>

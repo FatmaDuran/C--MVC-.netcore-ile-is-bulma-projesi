@@ -1,0 +1,79 @@
+﻿@*@{
+    Layout = "~/Views/_Layout.cshtml";
+}*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="~/node_modules/bootstrap/js/src/dropdown.js"></script>
+</head>
+<body>
+    <!--Navbar Kısmı---->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">İŞ BUL</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">ANASAYFA</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+            </ul>
+            @*<button class="btn btn-danger navbar-btn"
+        <a href="https://localhost:44388/Account/Login"></a>İLAN VER</button>*@
+
+            <a class=" btn btn-xs btn danger" href="https://localhost:44388/Account/Login" style=" border: none;
+        color: white;
+        padding: 7px 10px;
+        font-size: 16px;
+        cursor: pointer;">İLAN VER</a>
+
+
+            <a class=" btn btn-xs btn danger" href="https://localhost:44388/Applicant/Register" style=" border: none;
+        color: white;
+        padding: 7px 10px;
+        font-size: 16px;
+        cursor: pointer;">KAYDOL</a>
+
+
+            <a class=" btn btn-xs btn danger" href="https://localhost:44388/Account/Login" style=" border: none;
+        color: white;
+        padding: 7px 10px;
+        font-size: 16px;
+        cursor: pointer;">GİRİŞ YAP</a>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+
+    </div>
+    <div class="col-md-2">
+        <div class="list-group" id="myList" role="tablist">
+            <h5>Filtrelemek İstediğiniz Kriteri Seçiniz</h5>        
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/Index" role="tab"> Tüm İlanları Göster  </a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterBySector" role="tab"> Sektöre Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByJob" role="tab"> Mesleğe Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByGender" role="tab"> Cinsiyete Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByCity" role="tab"> Şehire Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByWorkingTime" role="tab"> Çalışma Zamanına Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByEducation" role="tab"> Eğitime Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByCompany" role="tab"> Firmaya Göre Filtreleme</a>
+            <a class="list-group-item list-group-item-action" data-toggle="list" href="https://localhost:44388/Advertisement/FilterByLevel" role="tab"> Seviyeye Göre Filtreleme</a>
+        </div>
+    </div>
+
+    <div class="col-md-10"> @RenderBody() </div>
+    <div class="col-md-12"> Footer </div>
+</body>
+</html>

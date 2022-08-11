@@ -1,0 +1,15 @@
+﻿@model FindJob.Web.Models.EducationListViewModel
+
+<div class="list-group">
+    <table>
+        @foreach (var Education in Model.Educations)
+        {
+            <tr>
+                <td>
+                    <a href="/Advertisement/FilterByEducation?education=@Education.Id ">@Education.Name</a>
+
+                </td>
+            </tr>
+        }
+    </table>
+</div>

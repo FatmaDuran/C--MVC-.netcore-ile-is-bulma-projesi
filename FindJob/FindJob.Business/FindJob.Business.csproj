@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FindJob.Core\FindJob.Core.csproj" />
+    <ProjectReference Include="..\FindJob.DataAccess\FindJob.DataAccess.csproj" />
+    <ProjectReference Include="..\FindJob.Entities\FindJob.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

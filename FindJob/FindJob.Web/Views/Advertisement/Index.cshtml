@@ -1,0 +1,65 @@
+﻿@model FindJob.Web.Models.AdvertisementListViewModel
+
+@{
+    Layout = "~/Views/Advertisement/AdvertisementLayout.cshtml";
+}
+
+   
+    <div>
+        <h4>İLANLAR</h4>
+        <form>
+            <table class="table table-responsive">
+                <tr>
+                    <td>İlan Adı</td>
+                    <td>Şehir</td>
+                    <td>Firma</td>
+                    <td> </td>
+                </tr>
+                @foreach (var advertisement in Model.Advertisements)
+                {
+                    <style>
+                        .btn {
+                            border: none;
+                            color: white;
+                            padding: 7px 10px;
+                            font-size: 16px;
+                            cursor: pointer;
+                        }
+
+                        .info {
+                            background-color: #2196F3;
+                        }
+
+                        .danger {
+                            background-color: #f44336;
+                        }
+                            /* Red */
+                            .danger:hover {
+                                background: #da190b;
+                            }
+                    </style>
+
+                    <tr>
+                        <td>@advertisement.Name</td>
+                        <td>@advertisement.City?.Name</td>
+                        <td>@advertisement.Company?.Name</td>
+                        <td>
+                           
+                            <a class=" btn btn-xs btn danger" href="https://localhost:44388/Advertisement/ViewDetail"
+                               border: none;
+                               color: white;
+                               padding: 7px 10px;
+                               font-size: 16px;
+                               cursor: pointer;">Detaya Git</a>
+                        </td>
+
+                    </tr>
+                }
+
+            </table>
+        </form>
+
+    </div>
+
+
+

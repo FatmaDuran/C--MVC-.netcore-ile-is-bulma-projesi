@@ -1,0 +1,61 @@
+﻿@model  FindJob.Web.Models.AdvertisementViewModel
+
+@{ 
+    Layout = "~/Views/Advertisement/AdvertisementLayout.cshtml";
+}
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <h4>İlan Detayları</h4>
+    </head>
+    <body>
+        <div class="col-md-10">
+
+            <style>
+                .btn {
+                    border: none;
+                    color: white;
+                    padding: 7px 9px;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                .info {
+                    background-color: #2196F3;
+                }
+
+                .danger {
+                    background-color: #f44336;
+                }
+                    /* Red */
+                    .danger:hover {
+                        background: #da190b;
+                    }
+            </style>
+
+            <ul>
+                <li>İlan Adı <a>@Model.Advertisement.Name</a> </li>
+                <li>Firma Adı<a>@Model.Advertisement.Company?.Name</a> </li>
+                <li> Sektör  <a>@Model.Advertisement.Sector?.Name</a>  </li>
+                <li> Meslek  <a>@Model.Advertisement.Job?.Name</a>  </li>
+                <li>Eğitim Durum <a>@Model.Advertisement.Education?.Name</a> </li>
+                <li> Cinsiyet Tercihi <a>@Model.Advertisement.Gender?.Name</a></li>
+                <li> Çalışma Pozisyonu <a>@Model.Advertisement.Level?.Name</a></li>
+                <li>Çalışma Zamanı<a>@Model.Advertisement.WorkingTime?.Name</a></li>
+            </ul>
+            <ul>
+
+                <li>
+                    <!--Çalışmıyor-->
+                    <a class=" btn btn-xs btn danger" href="https://localhost:44388/Account/Login" style=" border: none;
+                        color: white;
+                        padding: 7px 10px;
+                        font-size: 16px;
+                        cursor: pointer;">BAŞVUR</a>
+                </li>
+
+            </ul>
+        </div>
+    </body>
+    </html>

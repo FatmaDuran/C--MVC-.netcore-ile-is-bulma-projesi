@@ -1,0 +1,15 @@
+﻿@model FindJob.Web.Models.GenderListViewModel
+    <div class="list-group">
+        <table>
+            @foreach (var Gender in Model.Genders)
+            {
+                <tr>
+                    <td>
+                        <a href="/Advertisement/FilterByGender?gender=@Gender.Id">@Gender.Name</a>
+
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+      

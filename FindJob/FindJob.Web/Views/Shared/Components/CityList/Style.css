@@ -1,0 +1,9 @@
+﻿ul {
+    list-style: none outside none;
+}
+
+li {
+    position: relative;
+    display: inline;
+    margin: 20px;
+}

@@ -1,0 +1,292 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Migrator\\FindJob.Migrator.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj",
+        "projectName": "FindJob.Core",
+        "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj",
+        "packagesPath": "C:\\Users\\Fatma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fatma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.421\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\FindJob.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\FindJob.DataAccess.csproj",
+        "projectName": "FindJob.DataAccess",
+        "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\FindJob.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Fatma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fatma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj": {
+                "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj"
+              },
+              "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj": {
+                "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.421\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj",
+        "projectName": "FindJob.Entities",
+        "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj",
+        "packagesPath": "C:\\Users\\Fatma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fatma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj": {
+                "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Core\\FindJob.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.421\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Migrator\\FindJob.Migrator.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Migrator\\FindJob.Migrator.csproj",
+        "projectName": "FindJob.Migrator",
+        "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Migrator\\FindJob.Migrator.csproj",
+        "packagesPath": "C:\\Users\\Fatma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Migrator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Fatma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\FindJob.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.DataAccess\\FindJob.DataAccess.csproj"
+              },
+              "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj": {
+                "projectPath": "C:\\Users\\Fatma\\Desktop\\prj\\FindJob\\FindJob.Entities\\FindJob.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "System.Linq.Expressions": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.421\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

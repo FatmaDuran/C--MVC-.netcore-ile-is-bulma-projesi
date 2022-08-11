@@ -1,0 +1,61 @@
+﻿@model FindJob.Web.Models.AdvertisementListViewModel
+@*
+
+
+
+    <div class="list-group">
+        <table>
+            @foreach (var City in Model.Cities)
+            {
+                <tr>
+                    <td>
+                        <a href="/Advertisement/FilterByCity?city=@City.Id ">@City.Name</a>
+
+                    </td>
+                </tr>
+            }
+        </table>
+    </div>
+
+
+
+
+
+
+
+*@
+
+
+
+@*
+
+    <table class="table table-responsive">
+               <tr>
+                   <td>İlan Adı</td>
+                   <td>Şehir</td>
+                   <td>Firma</td>
+                   <td> </td>
+               </tr>
+               @foreach (var advertisement in Model.Advertisements)
+               {
+
+                   <tr>
+                       <td>@advertisement.Name</td>
+                       <td>@advertisement.City?.Name</td>
+                       <td>@advertisement.Company?.Name</td>
+                       <td>@advertisement.Sector?.Id</td>
+                       <td>
+                           <a class=" btn btn-xs btn danger" style=" border: none;
+                                                   color: white;
+                                                   padding: 7px 10px;
+                                                   font-size: 16px;
+                                                   cursor: pointer;">
+                               Detaya Git
+                           </a>
+                       </td>
+                   </tr>
+               }
+           </table>
+
+
+*@
